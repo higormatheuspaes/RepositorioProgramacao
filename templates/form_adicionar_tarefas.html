@@ -1,0 +1,29 @@
+{% extends 'main_template.html' %}
+
+{% block header %}
+<h1>{% block title %}Cadastrar Tarefa{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+<form action="adicionar_tarefas">
+    <p>
+        Nome da tarefa <input type="text" name="nomeDaTarefa" value="Trabalho de programação">
+    </p>
+    <p>
+        Objetivo da tarefa <input type="text" name="objetivoDaTarefa" value="Termianar trabalho de programação conforme regras do sigaa">
+    </p>
+    <p>
+        Concluida/Não Concluida <input type="text" name="concluidaOuNaoConcluida" value="Em andamento">
+    </p>
+    <p>
+        Data para finalizar <input type="text" name="dataDaTarefa" value="01/07/2024">
+    </p>
+    <p>
+        Pessoa Responsável <input type="text" name="pessoaResponsavel" value="Higor">
+    </p>
+
+    <button>Cadastrar</button>
+</form>
+
+{% endblock %}
